@@ -41,26 +41,26 @@ class KangMod(loader.Module):
     """Be cool, be kanger"""
     strings = {
         "name": "GovnoKanger",
-        "silent_mode_cfg_doc": "If turned off, your userbot will edit kang message on ever step(recent actions flood) (on/off)",
+        "silent_mode_cfg_doc": "ЕСЛИ ВЫКЛЮЧЕНО ТО Я БУДУ ОРАТЬ КАК ЕБНУТЫЙ НАХУЙ",
         "pack_name_cfg_doc": "Название пакета спермы.\n%username% - твоя кликуха на зоне\n%packNumber% - сколько раз тебя там петушили.",
         "preparing_msg": "<code>Дрочу...</code>",
         "unsupported_err": "<b>И чё за говно ты мне дал</b>",
         "reply_err": "<b>Реплай мне дай дура тупая...</b>",
         "gettingType_msg": "<code>Щя чекну что за высер ты мне дал...</code>",
-        "image_kanging_msg": "<code>Жру твое говно...</code>",
+        "image_kanging_msg": "<code>Сосу...</code>",
         "animated_kanging_msg": "<code>Пью твою мочу...</code>",
         "pack_notExist": "Пакет гавна не найден...",
-        "switching_msg": "<code>Сру в пакет номер {} потому что в предыдущий насрал дядя витя...</code>",
-        "added_to_different_msg": "УРА!!! Я ПОСРАЛ В ПАКЕТ" +
-            "Я насрал в новый пакет. Положил его <a href=\"{}\">сюда</a> \n " +  # noqa: E131
-            "<b>Ваша мать съест какашку через 5 секунд.</b>",
+        "switching_msg": "<code>Ссу в пакет номер {} ибо нахуй остальные я зассал все ауе...</code>",
+        "added_to_different_msg": "УРА!!! Я ПОСРАЛ В ПАКЕТ \n " +
+            "Я поссал в новый пакет. Положил его <a href=\"{}\">сюда</a> \n " +  # noqa: E131
+            "<b>НАХУЙ СЪЕБАЛ СУКА БЛЯТЬ</b>",
         "added_msg": "УРА!!! Я ПОСРАЛ В ПАКЕТ. Говно положил вот <a href=\"{}\">сюда</a> \n" +
-            "<b>Ваша мать съест какашку через 5 секунд.</b>",
+            "<b>НАХУЙ СЪЕБАЛ СУКА БЛЯТЬ</b>",
     }
 
     def __init__(self):
         self.config = loader.ModuleConfig("silent_mode", "off", lambda: self.strings["silent_mode_cfg_doc"],
-                                        "pack_name", '%username%\'s pack %packNumber%', lambda: self.strings["pack_name_cfg_doc"])  # noqa: E128
+                                        "pack_name", '%username%\'s пакет с говном номер %packNumber%', lambda: self.strings["pack_name_cfg_doc"])  # noqa: E128
 
     def config_complete(self):
         self.name = self.strings["name"]
